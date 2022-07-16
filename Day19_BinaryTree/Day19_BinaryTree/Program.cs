@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Binary Search Tree Problem");
-            BinarySearchTree<int> BinaryTree = new BinarySearchTree<int>();
+            BinarySearchTree<int> BinaryTree = new BinarySearchTree<int>();//list
 
             ///UC1: Add the node in the tree and it doesnot have any output just display welcome message
 

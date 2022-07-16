@@ -28,13 +28,13 @@ namespace Day19_BinaryTree
                 return new BinarySearchTreeNode<K>(Key);
 
             
-            int CompareResult = Key.CompareTo(Current.Key);
+            int CompareResult = Key.CompareTo(Current.Key);//comapring with the key with current
               
             if (CompareResult == 0)
                 return Current;
             
             if (CompareResult < 0)
-                Current.Left = AddRecursively(Current.Left, Key);
+                Current.Left = AddRecursively(Current.Left, Key);//if compareresult is -1 it will go to left or 1 go to right
 
             else
                 Current.Right = AddRecursively(Current.Right, Key);
@@ -43,7 +43,7 @@ namespace Day19_BinaryTree
         }
         public int GetSize()
         {
-            return this.getSizeRecursively(Root);
+            return this.getSizeRecursively(Root);//first value enter to the root s\after again we have to check with the left or right
         }
 
         private int getSizeRecursively(BinarySearchTreeNode<K> Current)
